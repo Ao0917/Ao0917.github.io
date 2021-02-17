@@ -5,7 +5,7 @@ File Name:styles.css
 */
 
 /* css reset */
-body, header, nav, footer, hi, div, img{
+body, header, nav, footer, hi, div, img, ul{
 
     margin: 0;
     padding: 0;
@@ -24,52 +24,94 @@ img{
     display: block;
 
 }
+
+/*style rules for moblie viewpoint*/
+
+/*style rules for header*/
+
 header {
-    width: 25%;
-    float: left;
+   position:-webkit-sticky;
+   position: sticky;
+   top: 0;
+   background-color: black;
+   height: 190px;
+}
+
+header img {
+    margin: 0 auto;
+
 }
 
 /* style rules for navigation area*/
+
 nav{
 
-    width: 70%;
-    float: right;
-    margin: 5em 3em 0 0;
-
+   padding: 1%;
+   margin-bottom: 1%;
 }
 
 nav ul{
-    list-style-type: none;
-    margin: 0;
-    text-align: right;
+    list-style-type: none;    
+    text-align: center;
 }
 
 nav li{
 
-    display:inline-block;
     font-size: 1.5em;
-    font-family: verdana,arial,sans-serif;
-    font-weight: bold;
+    font-family: 'francois One',sans-serif;
+    border-top: 1px solid #fff;
+}
 
+nav li:first-child{
+    border-top: none;
 }
 
 nav li a{
 
     display:block;
     color:#fff;
-    text-align: center;
     padding:0.5em 1em;
     text-decoration:none;
+}
+
+/* show moblie class, hide tablet-desktop class*/
+.moblie{
+display: block;
+}
+
+.tablet-desktop{
+    display: none;
 }
 
 /* style rules for main content*/ 
 main{
 
-    clear:left;
     background-color: #fff;
     padding: 2%;
     font-size: 1.25em;
+    font-family: 'Roboto slab' serif;
+}
 
+.tel-link{
+
+    background-color: #404040;
+    padding: 2%;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.tel-link a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5 em;
+    display: block;
+
+}
+
+.hours{
+    margin-left: 10%;
 }
 
 .action{
@@ -82,29 +124,12 @@ main{
 
 #weights,#cardio,#training{
 
-    width: 29%;
-    float: left;
     margin: 0 2%;
-
 }
 
-#exercises{
+.round{
 
-    clear: left;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-    background-color: #f2f2f2;
-    padding: 1% 2%;
-}
-
-#exercises dt{
-
-    font-weight: bold;
-}
-
-#exercises dd{
-
-    padding: 0.5% 1% 2% 0;
+    border-radius: 8px;
 }
 
 .external-link{
@@ -118,7 +143,7 @@ main{
 
 }
 
-#contact a {
+#contact .contact-email-link {
 
     color: #666600;
     text-decoration: none;
@@ -126,7 +151,9 @@ main{
 
 .map {
 
-    border: 8px solid #000;
+    border: 2px solid #000;
+    width: 95%;
+    height: 50;
 }
 
 /* style rules for footer content */
@@ -145,3 +172,21 @@ footer p a{
     text-decoration: none;
 
 }
+/*#exercises{
+
+    clear: left;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    background-color: #f2f2f2;
+    padding: 1% 2%;
+}
+
+#exercises dt{
+
+    font-weight: bold;
+}
+
+#exercises dd{
+
+    padding: 0.5% 1% 2% 0;
+}*/
