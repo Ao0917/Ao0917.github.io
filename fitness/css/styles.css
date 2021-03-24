@@ -5,7 +5,7 @@ File Name:styles.css
 */
 
 /* css reset */
-body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside{
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -17,7 +17,7 @@ body {
 }
 
 /*style rule for header*/
-img{
+img, video{
     max-width: 100%;
     display: block;
 }
@@ -85,6 +85,10 @@ main{
     padding: 2%;
     font-size: 1.25em;
     font-family: 'Roboto slab', serif;
+}
+
+video {
+    margin: 0 auto 4%;
 }
 
 .mobile h3{
